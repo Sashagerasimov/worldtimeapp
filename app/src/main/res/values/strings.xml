@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">World Time</string>
+    <string name="button1">12 Hour</string>
+    <string name="button2">24 Hour</string>
+    <string name="city1">Paris</string>
+    <string name="city2">Toyko</string>
+    <string name="city3">London</string>
+    <string name="city4">Moscow</string>
+    <string name="city5">New York</string>
+    <string name="city6">Sydney</string>
+</resources>
