@@ -2,6 +2,7 @@
     <string name="app_name">World Time</string>
     <string name="button1">12 Hour</string>
     <string name="button2">24 Hour</string>
+    <string name="local_time">Local Time:</string>
     <string name="city1">Paris</string>
     <string name="city2">Toyko</string>
     <string name="city3">London</string>

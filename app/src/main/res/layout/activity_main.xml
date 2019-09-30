@@ -4,7 +4,128 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FDEBDA"
     tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2">
+
+        <CheckBox
+            android:id="@+id/hideCity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:checked="true"
+            android:text="PAR"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/hideCity2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="TOK"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/hideCity3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="LON"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/hideCity4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="MOS"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/hideCity5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="NYC"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/hideCity6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="SYD"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextClock
+        android:id="@+id/timeLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:format12Hour="h:mm:ss a, E"
+        android:format24Hour="kk:mm:ss, E"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/localTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/local_time"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/buttonBar"
@@ -28,8 +149,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/button1"
                 android:background="#FF8C00"
+                android:text="@string/button1"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold" />
 
@@ -50,8 +171,10 @@
         android:id="@+id/scrollView5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="47dp"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:id="@+id/cities"
