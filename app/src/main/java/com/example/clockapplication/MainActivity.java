@@ -3,6 +3,7 @@ package com.example.clockapplication;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -48,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
                 textClock.setFormat12Hour("kk:mm:ss, E");
                 textClock = city6.findViewById(R.id.timeNow);
                 textClock.setFormat12Hour("kk:mm:ss, E");
+
+                button1.setBackgroundColor(getColor(R.color.colorPrimaryDark));
+                button2.setBackgroundColor(getColor(R.color.colorPrimary));
             }
         });
 
@@ -67,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
                 textClock.setFormat12Hour("h:mm:ss a, E");
                 textClock = city6.findViewById(R.id.timeNow);
                 textClock.setFormat12Hour("h:mm:ss a, E");
+
+                button2.setBackgroundColor(getColor(R.color.colorPrimaryDark));
+                button1.setBackgroundColor(getColor(R.color.colorPrimary));
             }
         });
 
